@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void f_alpha(int *p) {
+void invertir_numero(int *p) {
     int temp = *p;
     int rev = 0;
     while (temp > 0) {
@@ -8,26 +8,29 @@ void f_alpha(int *p) {
         temp = temp / 10;
     }
     *p = rev;
+    printf("El numero invertido es: %d\n",*p);
 }
 
-void f_beta(int *p) {
+void calcular_mitad(int *p) {
     *p = *p / 2;
+    printf("La mitad del numero es : %d\n",*p);
 }
 
-void f_gamma(int *p) {
+void sumar_digitos(int *p) {
     int temp = *p;
     int suma = 0;
     while (temp > 0) {
         suma = suma + (temp % 10);
         temp = temp / 10;
     }
+    printf("La suma de los digitos es: %d\n",suma);
     *p = *p + suma;
 }
 
 void procesar_enigma(int *valor_referencia) {
-    f_alpha(valor_referencia);
-    f_beta(valor_referencia);
-    f_gamma(valor_referencia);
+    invertir_numero(valor_referencia);
+    calcular_mitad(valor_referencia);
+    sumar_digitos(valor_referencia);
 }
 
 int main() {
