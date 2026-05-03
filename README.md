@@ -100,3 +100,24 @@ cómo los solucionó.
 ### _Punto 4_
 ## _Primera parte_
 En el repositorio local se observa el archivo **tp1_1.c** y **tp1_1.exe**. Como no quiero que el segundo sea visible por git entonces guardo su nombre en el archivo **.gitignore** para luego pushear el repositorio local al remoto.
+## _Segunda parte_
+
+  En el archivo **Punteros.c** se nos pide declarar una variable, asignarle un puntero a su direccion de memoria, mostrar ambos contenidos y sus direcciones de memoria.
+  Se nos dice...
+  
+  - _Si resolvió correctamente los apartados 2 y 3 del punto anterior notará que el resultado es el mismo. ¿a qué se debe?_
+  
+  ```
+  2) Muestre la dirección de memoria almacenada por el puntero.
+  3) Muestre la dirección de memoria de la variable.
+  ```
+
+  En respuesta, que la direccion de memoria almacenada por el puntero y que la direccion de la variable (apuntada) sean iguales se debe a que son el mismo dato en distintas variables. Una que es la original (variable apuntada) y otra que sirve como contenedor de su direccion de memoria.
+  
+  - _¿Qué obtiene en el punto 4? ¿Es igual a los anteriores? ¿Por qué?_
+
+  ```
+  4) Muestre la dirección de memoria del puntero.
+  ```
+  En el punto 4 se obtiene la **direccion de memoria** del **puntero**. La cual no es igual a las anteriores porque esta es la direccion propia del puntero, no la que tiene contenida.
+  
