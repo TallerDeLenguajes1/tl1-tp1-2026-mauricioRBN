@@ -97,3 +97,6 @@ cómo los solucionó.
   return 0;
           ^
   ```
+### _Punto 4_
+## _Primera parte_
+En el repositorio local se observa el archivo **tp1_1.c** y **tp1_1.exe**. Como no quiero que el segundo sea visible por git entonces guardo su nombre en el archivo **.gitignore** para luego pushear el repositorio local al remoto.
